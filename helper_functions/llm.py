@@ -9,8 +9,8 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv  
 
-load_dotenv()
-#t.write("OPENAPI_API_KEY:", st.secrets["OPENAPI_API_KEY"]) 
+#load_dotenv()
+st.write("OPENAPI_API_KEY:", st.secrets["OPENAPI_API_KEY"]) 
 
 # Pass the API Key to the OpenAI Client
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
