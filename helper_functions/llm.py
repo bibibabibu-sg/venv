@@ -10,10 +10,10 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv  
 
 #load_dotenv()
-st.write("OPENAPI_API_KEY:", st.secrets["OPENAPI_API_KEY"]) 
+
 
 # Pass the API Key to the OpenAI Client
-client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 def get_embedding(input, model='text-embedding-3-small'):
     response = client.embeddings.create(

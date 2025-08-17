@@ -7,7 +7,7 @@ import time
 from helper_functions import llm
 import streamlit as st
 from helper_functions.utility import check_password
-import pysqlite3 as sqlite3
+#import pysqlite3 as sqlite3
 
 def generate_main_user_box(placeholder):
     user_text = placeholder.text_area("What do you want to find out?", height=200)
